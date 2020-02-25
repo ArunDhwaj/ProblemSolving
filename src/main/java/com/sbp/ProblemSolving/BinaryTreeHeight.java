@@ -2,9 +2,23 @@ package com.sbp.ProblemSolving;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class BinaryTreeHeight
 {
+    // Data structure to store a Binary Tree node
+    private class Node
+    {
+        int key;
+        Node left, right;
+
+        Node(int key)
+        {
+            this.key = key;
+            this.left = this.right = null;
+        }
+    }
+
     private Node root = null;
 
     public void insertNode(int data)
@@ -96,16 +110,30 @@ public class BinaryTreeHeight
         return height;
     }
 
-    // Data structure to store a Binary Tree node
-    private class Node
+    public int diameterOfBinaryTree()
     {
-        int key;
-        Node left, right;
+        AtomicInteger diameter = new AtomicInteger(0);
+        getDiameter(root, diameter);
 
-        Node(int key)
-        {
-            this.key = key;
-            this.left = this.right = null;
-        }
+        return diameter.get();
+    }
+
+    private int getDiameter(Node root, AtomicInteger diameter)
+    {
+        if(root == null)
+            return 0;
+
+        //Get heights of the left and right subtree;
+        int left_h = getDiameter(root.left, diameter);
+        int right_h = getDiameter(root.right, diameter);
+
+        //calculate diameter through the current node
+        int max_diameter = left_h + right_h + 1;
+
+        //Updating the Maximum Diameter
+        diameter.set(Math.max(diameter.get(), max_diameter));
+
+        //return height of subtree rooted at current node
+        return Math.max(left_h, right_h) + 1;
     }
 }

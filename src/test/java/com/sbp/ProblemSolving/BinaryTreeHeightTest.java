@@ -20,6 +20,7 @@ public class BinaryTreeHeightTest
         bth.insertNode(25);
 
         System.out.printf("The height of the binary tree: %d\n", bth.height());
+        System.out.printf("The Diameter of the binary tree: %d\n", bth.diameterOfBinaryTree());
     }
 
     @Test
@@ -41,6 +42,7 @@ public class BinaryTreeHeightTest
         bth.insertNode(23);
 
         System.out.printf("The height of the binary tree: %d\n", bth.height());
+        System.out.printf("The Diameter of the binary tree: %d\n", bth.diameterOfBinaryTree());
     }
 
     @Test
@@ -61,5 +63,8 @@ public class BinaryTreeHeightTest
         bth.insertNode(23);
 
         System.out.printf("The height of the binary tree: %d\n", bth.height());
+
+        System.out.printf("The Diameter of the binary tree: %d\n", bth.diameterOfBinaryTree());
+
     }
 }
