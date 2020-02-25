@@ -8,12 +8,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/sbp/ProblemSolving/BinaryTreeHeight.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/sbp/ProblemSolving/LongestCommonSubSeq.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/sbp/ProblemSolving/ProblemSolvingApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/sbp/ProblemSolving/BinaryTreeHeightTest.java">
           <value>
             <set />
           </value>
