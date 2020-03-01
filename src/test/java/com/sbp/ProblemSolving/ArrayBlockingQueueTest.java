@@ -1,6 +1,6 @@
 package com.sbp.ProblemSolving;
 
-import com.sbp.ProblemSolving.blockingqueue.ArrayBlockingQueueExample;
+import com.sbp.ProblemSolving.cocurrent.ArrayBlockingQueueExample;
 import org.junit.jupiter.api.Test;
 
 public class ArrayBlockingQueueTest

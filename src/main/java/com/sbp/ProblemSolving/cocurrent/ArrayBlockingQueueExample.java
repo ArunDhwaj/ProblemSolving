@@ -1,4 +1,4 @@
-package com.sbp.ProblemSolving.blockingqueue;
+package com.sbp.ProblemSolving.cocurrent;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
