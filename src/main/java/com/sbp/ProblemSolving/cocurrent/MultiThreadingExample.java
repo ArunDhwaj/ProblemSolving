@@ -7,7 +7,7 @@ public class MultiThreadingExample extends Thread
         System.out.println("This is my extend thread class");
     }
 
-    public MultiThreadingExample()
+    public void MultiThreadingExample()
     {
         MultiThreadingExample multiThreadingExample = new MultiThreadingExample();
         multiThreadingExample.run();
