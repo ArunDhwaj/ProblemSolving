@@ -1,0 +1,14 @@
+
+h
+java:S2142!"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ8ÙİÊÃ.
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‡¦Ê¦8ìıŒ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Æìâúÿÿÿÿ
+E
+java:S1148#"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÙİÊÃ.
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÿŸ¾Ğüÿÿÿÿ8‘ìû¿.
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ñ¿ú¨ÿÿÿÿÿ8ìıŒ.
+q	java:S116	"URename this field "max_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“´èØ8‹³´¿.
+]	java:S125="<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ8ÙİÊÃ.

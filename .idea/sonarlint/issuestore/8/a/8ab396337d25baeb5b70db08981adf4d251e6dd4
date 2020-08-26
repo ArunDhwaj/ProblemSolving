@@ -1,0 +1,18 @@
+
+>
+java:S1148m"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+g
+java:S1192g"LDefine a constant instead of duplicating this literal "Consuming: " 3 times.(¦Æùüÿÿÿÿ
+>
+java:S11484"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+a
+java:S21422"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâÞáøÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÉ²‘ûÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÅéÒùÿÿÿÿ
+a
+java:S2142k"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâÞáøÿÿÿÿ
+a
+java:S2142S"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâÞáøÿÿÿÿ
+>
+java:S1148U"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(œˆ ›

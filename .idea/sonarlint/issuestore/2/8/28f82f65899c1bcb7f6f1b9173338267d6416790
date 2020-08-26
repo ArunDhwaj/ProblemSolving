@@ -1,0 +1,10 @@
+
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÿŸ¾Ğüÿÿÿÿ8ç¸ÈÆ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Æìâúÿÿÿÿ
+y
+java:S3008"WRename this field "my_lock_sicr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üæ»Öúÿÿÿÿ8ç¸ÈÆ.
+E
+java:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”èÉÆ.
+h
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ8”èÉÆ.
