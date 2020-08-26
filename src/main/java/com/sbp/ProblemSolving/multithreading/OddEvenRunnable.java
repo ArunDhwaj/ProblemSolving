@@ -19,57 +19,58 @@ public class OddEvenRunnable implements Runnable
     {
         while ( number < max_number)
         {
-            synchronized (myLock)
-            {
-                while ( number % 2 != remainder)
+                System.out.println(Thread.currentThread().getName());
+
+                synchronized (myLock)
                 {
+                    while ( number % 2 != remainder)
+                    {
                     // wait for numbers other than remainder
-                    try
-                    {
-                        myLock.wait();
+                        try
+                        {
+                            myLock.wait();
+                        }
+                        catch (InterruptedException e)
+                        {
+                            e.printStackTrace();
+                        }
                     }
-                    catch (InterruptedException e)
+
+                    if(cycle%2 == 1 )
                     {
-                        e.printStackTrace();
+                        if (remainder == 1)
+                        {
+                            System.out.println("cycle: " + cycle);
+                            System.out.println(Thread.currentThread().getName() + " " + (2*cycle -1));
+                        }
+                        else if (remainder == 0)
+                        {
+                            System.out.println(Thread.currentThread().getName() + " " + (2*cycle));
+                            System.out.println();
+                            cycle++;
+                        }
                     }
+
+                    else if(cycle%2 == 0 )
+                    {
+                        if (remainder == 1)
+                        {
+                            System.out.println("cycle: " + cycle);
+
+                            System.out.println(Thread.currentThread().getName() + " " + (2*cycle));
+                            //System.out.println();
+                        }
+                        else if (remainder == 0)
+                        {
+                            System.out.println(Thread.currentThread().getName() + " " + (2*cycle-1));
+                            System.out.println();
+                            cycle++;
+                        }
+                    }
+
+                    number++;
+                    myLock.notifyAll();
                 }
-
-                if(cycle%2 == 1 )
-                {
-                    if (remainder == 1)
-                    {
-                        System.out.println("cycle: " + cycle);
-                        System.out.println(Thread.currentThread().getName() + " " + (2*cycle -1));
-                    }
-                    else if (remainder == 0)
-                    {
-                        System.out.println(Thread.currentThread().getName() + " " + (2*cycle));
-                        System.out.println();
-                        cycle++;
-                    }
-                }
-
-                else if(cycle%2 == 0 )
-                {
-                    if (remainder == 1)
-                    {
-                        System.out.println("cycle: " + cycle);
-
-                        System.out.println(Thread.currentThread().getName() + " " + (2*cycle));
-                        //System.out.println();
-                    }
-                    else if (remainder == 0)
-                    {
-                        System.out.println(Thread.currentThread().getName() + " " + (2*cycle-1));
-                        System.out.println();
-                        cycle++;
-                    }
-                }
-
-                number++;
-
-                myLock.notifyAll();
-            }
         }
     }
 }
